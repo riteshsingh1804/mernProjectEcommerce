@@ -1,0 +1,23 @@
+*{
+padding: 0;
+margin: 0;
+scroll-behavior: smooth;
+}
+
+/*Chrome Safari Edge Opera*/
+::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Firefox*/
+input[type="number"]{
+-moz-appearance: none;
+}
+
+.redColor{
+color:red !important;
+}
+.greenColor{
+color:green !important;
+}

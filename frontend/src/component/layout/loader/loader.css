@@ -1,0 +1,27 @@
+.loader{
+background-color: white;
+width: 100vw;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.loader >div{
+/* background-color: red; */
+width:20vmax;
+height:20vmax;
+border-bottom: 2px solid rgb(110, 110, 110);
+border-radius: 100%;
+
+animation: loaderAnimation 500ms linear infinite  ;
+
+
+}
+
+@keyframes loaderAnimation {
+    to{
+        transform: rotateZ(-360deg);
+    }
+    
+}

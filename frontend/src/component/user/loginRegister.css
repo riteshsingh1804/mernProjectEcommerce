@@ -1,0 +1,256 @@
+
+.loginRegisterContainer{
+width: 100vw;
+height: 100vh;
+max-width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(231, 231, 231);
+position: fixed;
+top: 0%;
+left: 0%;
+}
+
+.loginRegisterBox{
+background-color: white;
+width: 25vw;
+height: 75vh;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+
+
+
+
+.login_register_header{
+
+}
+.login_register_toggle{
+display: flex;
+height: 3vmax;
+}
+.login_register_toggle >p{
+color: rgba(0, 0, 0, 0.678);
+font: 300 1vmax "Roboto";
+
+cursor: pointer;
+display: grid;
+place-items: center;
+width: 100%;
+height: 100%;
+
+transition: all 0.5s;
+}
+.login_register_toggle >p:hover{
+   color:red;
+}
+.loginRegisterBox > div > button{
+background-color: tomato;
+height: 3px;
+width: 50%;
+border: none;
+
+transition: all 0.5s;
+}
+
+
+
+.loginForm,
+.registerForm{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+margin: auto;
+padding: 2vmax;
+height: 70%;
+
+transition: all .5s;
+}
+/* .loginForm {
+    transform: translateY(0%) translateX(0%);
+  } */
+.registerForm {
+    transform: translateY(-100%) translateX(-100%);
+  }
+/* .loginForm{
+    background-color: blue;
+}
+.registerForm{
+    background-color: yellow;
+} */
+
+
+.loginForm > div,
+.registerForm > div{
+display: flex;
+align-items: center;
+width: 100%;
+}
+
+.loginForm > div > input,
+.registerForm > div > input{
+padding: 1vmax 4vmax;
+padding-right: 1vmax;
+width: 100%;
+box-sizing: border-box;
+border: 1px solid rgba(0, 0, 0, 0.267);
+border-radius: 4px;
+font: 300 .9vmax cursive;
+outline: none;
+}
+
+.loginForm > div > svg,
+.registerForm > div > svg{
+position: absolute;
+transform: translateX(1vmax);
+font-size: 1.6vmax;
+color: rgba(0, 0, 0, 0,623);
+}
+
+.loginForm > a{
+color:rgba(0, 0, 0, 0.651);
+text-decoration: none;
+align-self: flex-end;
+transition: all 0.5s;
+font: 500 0.8vmax "Gill Sans";
+}
+.loginForm > a:hover{
+color: black;
+}
+
+.loginBtn,
+.registerBtn{
+border: none;
+background-color: tomato;
+color: white;
+font: 300 0.9vmax "Roboto";
+width: 100%;
+padding: 0.8vmax;
+cursor: pointer;
+transition: all 0.5s;
+border-radius: 4px;
+outline: navajowhite;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+.loginBtn :hover,
+.registerBtn :hover {
+background-color: rgb(179, 66, 46);
+}
+
+
+.loginPassword{
+
+}
+
+.loginEmail{
+
+}
+
+
+
+
+
+#registerImage >img{
+    width:3vmax;
+    border-radius: 100%;
+}
+
+#registerImage >input{
+    display: flex;
+    padding: 0%;
+
+}
+
+#registerImage >input::file-selector-button{
+    cursor: pointer;
+    width: 100%;
+    height: 5vh;
+    z-index: 2;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+}
+#registerImage > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  
+
+
+
+
+
+
+
+.shiftToRight{
+transform: translateX(100%);
+}
+
+.shiftToMainViewRegisterForm{
+transform: translateY(-100%);
+}
+.shiftToLeftLoginForm{
+    transform: translateX(-100%);
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){
+.loginRegisterContainer{
+  background-color: white;
+}
+.loginRegisterBox{
+  width: 100vw;
+  height: 95vh;
+}
+.login_register_toggle{
+ height: 5vmax;
+}
+.login_register_toggle > p{
+  font: 300 1.5vmax "Roboto";
+}
+
+.loginForm,
+.registerForm{
+      padding: 5vmax;
+}
+.loginForm > div > input,
+.registerForm > div > input{
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+}
+.loginForm > div > svg,
+.registerForm > div > svg{
+     font-size: 2.8vmax;
+}
+
+.loginForm >a {
+font: 500 1.8vmax "Gill Sans";
+}
+
+#registerImage >img{
+width: 8vmax;
+border-radius: 100%;
+}
+
+#registerImage >input::file-selector-button{
+height: 7vh;
+font: 400 1.8vmax cursive;
+}
+
+.loginBtn,
+.registerBtn{
+    font: 300 1.9vmax "Roboto";
+    padding: 1.8vmax;
+}
+
+}

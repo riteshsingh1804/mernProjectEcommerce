@@ -1,0 +1,52 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(255, 255, 255);
+    padding: 4rem 0;
+}
+
+.sidebar >a:first-child{
+padding: 0;
+}
+
+.sidebar >a >img{
+ width:100%;
+ transition: all .5s;   
+}
+
+.sidebar >a >img:hover{
+   filter: drop-shadow(0 0 10px tomato);
+}
+
+.sidebar >a:last-child{
+
+}
+
+
+
+
+.sidebar a{
+ text-decoration: none;
+ font: 200 1rem "Roboto";
+ color: rgba(0, 0, 0, 0.493);
+ pad: 2rem;
+ transition: all .5s;
+}
+.sidebar a:hover{
+color: tomato;
+transform: scale(1.1);
+}
+
+.sidebar p{
+    display: flex;
+    align-items: center;
+}
+
+.sidebar >a>p>svg{
+    margin-right: .5rem;
+}
+
+/* .MuiTypography-root{
+    background-color: #fff ;
+} */
