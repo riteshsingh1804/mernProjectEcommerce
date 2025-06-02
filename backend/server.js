@@ -18,7 +18,7 @@ process.on("uncaughtException",(err)=>{
 
 
 
-//deotenv Configuration
+//deotenv Configuration 
 //dotenv.config({path:"./config/config.env"});
 //we updated this below code as this thing is needed only for local and Dev not for Production
 //dotenv.config({path:"backend/config/config.env"});
