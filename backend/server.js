@@ -26,8 +26,9 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
     require("dotenv").config({path:"backend/config/config.env"});
 }
 
+const FINAL_PORT = process.env.PORT ||4000 ;
 connectDatabase();
-const server=app.listen(process.env.PORT,()=>{
+const server=app.listen(FINAL_PORT,'0.0.0.0',()=>{
     console.log(`Server is listening on the PORT ${process.env.PORT} and on link http://localhost:${process.env.PORT}  smoothly`);
 })
 
